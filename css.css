@@ -111,5 +111,6 @@ header {
 
 section { margin: min(5vw, 50px) 12.5% }
 .spamtext { text-indent: min(5vw, 50px) ; text-align: justify }
+h1 { text-align: center }
 
 
