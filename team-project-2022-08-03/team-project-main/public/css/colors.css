@@ -22,9 +22,9 @@ html * {
 
     --rounding: 5px ;
 
-    --imageone: url("../../images/1.0_Update.jpg") ;
-    --imagetwo: url("../../images/advancewars1-sq-1642537108800.jpg") ;
-    --imagethr: url("../../images/capsule_616x353.jpg") ;
+    --imageone: url("../../images/00ff74ae-14c0-11ed-909d-4662a9457b93.png") ;
+    --imagetwo: url("../../images/70b47eac-14c0-11ed-909d-4662a9457b93.png") ;
+    --imagethr: url("../../images/7a6b866c-14bf-11ed-909d-4662a9457b93.png") ;
     
     text-decoration: none ;
     transition: background-color .5s, color .5s, font-family .5s ;

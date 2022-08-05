@@ -43,6 +43,7 @@ header {
     
     /* buttons */
     button, .dropdown {
+        overflow: hidden ;
         text-align: center ;
         position: relative ;
         cursor: pointer ;
@@ -110,12 +111,12 @@ header {
 /* body */
 .body {
     position: absolute ;
-    overflow-y: auto ;
+    overflow-y: scroll ;
     z-index: -1 ;
     min-width: 100% ;
     /* max-height: calc( 100vh - min(30vw, 300px) ) ; */
-    max-height: calc( 100vh - min(24vw, 150px) );
-    margin: 0;
+    height: calc( 100vh - min(13.5vw, 207.5px) ) ;
+    margin: 0 ;
 }
 
 section { margin: min(5vw, 50px) 12.5% }
@@ -123,5 +124,5 @@ section { margin: min(5vw, 50px) 12.5% }
 h1 { text-align: center }
 
 .titleText {
-    font-size: 3vw;
+    font-size: 3vw ;
 }
