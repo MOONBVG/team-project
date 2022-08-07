@@ -1,0 +1,52 @@
+
+
+
+/* setup variables */
+html * {
+    --bgcolor: white ;
+    --navcolor: white ;
+    --labelcolor: white ;
+    --gradienttop: white ;
+    --buttonhover: skyblue ;
+    --placeholdercolor: skyblue ;
+    --gradientbottom: skyblue ;
+    --buttoncolor: deepskyblue ;
+    --textcolor: darkslateblue ;
+    --captionglow: deepskyblue ;
+    --activecolor: slateblue ;
+    --shadowcolor: darkslateblue ;
+    --titlecolor: deepskyblue ;
+    --titleshadow: darkslateblue ;
+
+    --transparent: darkslateblue ;
+
+    --rounding: 5px ;
+
+    --imageone: url("images/00ff74ae-14c0-11ed-909d-4662a9457b93.png") ;
+    --imagetwo: url("images/70b47eac-14c0-11ed-909d-4662a9457b93.png") ;
+    --imagethr: url("images/7a6b866c-14bf-11ed-909d-4662a9457b93.png") ;
+    
+    text-decoration: none ;
+    transition: background-color .5s, color .5s, font-family .5s ;
+    
+    --titlefont: normal normal normal min(7.5vw, 75px)/0 font my beloved ;
+    --buttonfont: normal normal normal min(2.5vw, 25px)/1 font my beloved ;
+    --bodyfont: normal normal normal min(5vw, 20px)/1.5 font my beloved ;
+}
+
+body {
+    font: var(--bodyfont) ;
+    overflow: hidden ;
+    margin: 0 ;
+    padding: 0 ;
+    color: var(--textcolor) ;
+    background-color: var(--bgcolor) ;
+}
+
+/* fonts */
+@font-face {
+    font-family: "font my beloved" ;
+    src: url("../Minecraftia-Regular.ttf") ;
+}
+
+
