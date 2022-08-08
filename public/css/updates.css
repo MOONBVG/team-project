@@ -1,0 +1,10 @@
+.updates .container {
+    margin: auto ;
+	width: auto ;
+  	padding: min(2.5vw, 25px) ;
+	max-width: min(72vw, 720px) ; 
+	border-radius: var(--rounding) ;
+	border: min(1vw, 10px) solid var(--buttoncolor) ;
+	box-shadow: 0 min(0.5vw, 5px) var(--shadowcolor) ; 
+	background-image: linear-gradient( var(--gradienttop) , var(--gradientbottom) ) ;
+}

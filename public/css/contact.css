@@ -1,0 +1,59 @@
+
+
+
+/* contact */
+.contactte * {
+	box-sizing: border-box ;
+	color: var(--textcolor) ;
+	font: var(--bodyfont) ;
+}
+
+.contactte input[type=text], .contactte select, .contactte textarea {
+	resize: vertical ;
+  	border: none ;
+	width: 100% ;
+  	margin-top: min(.5vw, 5px) ;
+  	margin-bottom: min(1.5vw, 15px) ;
+  	padding: min(1.5vw, 15px) ;
+	border-radius: var(--rounding) ;
+}
+
+.contactte input[type=submit] {
+	position: relative ;
+	cursor: pointer ;
+  	border: none ;
+	color: var(--labelcolor) ;
+	font: var(--buttonfont) ;
+  	padding: min(2vw, 20px) ;
+  	border-radius: var(--rounding) ;
+  	background-color: var(--buttoncolor) ;
+	box-shadow: 0 min(0.5vw, 5px) var(--shadowcolor) ;
+}
+
+.contactte input[type=submit]:hover { 
+	top: min(0.5vw, 5px) ;
+	color: var(--buttonhover) ;
+	background-color: var(--activecolor) ;
+	box-shadow: 0 min(-0.5vw, -5px) var(--boxcolor) ;
+}
+
+.contactte label { font-weight: bold }
+
+.contactte .container {
+	margin: auto ;
+	width: auto ;
+  	padding: min(2.5vw, 25px) ;
+	width: min(70.5vw, 705px) ;
+  	border-radius: var(--rounding) ;
+	border: min(1vw, 10px) solid var(--buttoncolor) ;
+	box-shadow: 0 min(0.5vw, 5px) var(--shadowcolor) ;
+	background-image: linear-gradient( var(--gradienttop) , var(--gradientbottom) ) ;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--placeholdercolor);
+	opacity: 1; /* Firefox */
+}
+
+.contactte input:focus, .contactte  textarea:focus { outline:none }
+
