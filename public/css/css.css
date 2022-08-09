@@ -60,7 +60,7 @@ header {
     }
     /* button { padding: min(3vw, 30px) 0 min(1.5vw, 15px) 0 } */
 
-    /* My horrible attempt at resizing the button */
+    /* Adrian's horrible attempt at resizing the button */
     button {
         padding: 1vw 0 .5vw 0;
         width: 15%;
