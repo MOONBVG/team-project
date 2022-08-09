@@ -1,0 +1,124 @@
+
+
+
+/* carousel */
+.carouselle * { box-sizing: border-box }
+.carouselle .container {
+	position: relative ;
+	height: auto ;
+	margin: auto ;
+	width: 50% ;
+	max-width: min(72vw, 720px) ;
+}
+
+/* images */ 
+.carouselle .img {
+	width: 100% ;
+	aspect-ratio: 1 / 1 ;
+
+	background-size: cover;
+	border-radius: var(--rounding) ;
+	margin-bottom: min(2.5vw, 25px) ;
+	border: min(1vw, 10px) solid var(--buttoncolor) ;
+	box-shadow: 0 min(0.5vw, 5px) var(--shadowcolor) ;
+}
+
+/* image files */
+.one {
+	animation-name: onetotwo ;
+	animation-duration: 1s ;
+	background-image: var(--imageone) ;
+} .two {
+	animation-name: twotothree ;
+	animation-duration: 1s ;
+	background-image: var(--imagetwo) ;
+} .three {
+	animation-name: threetoone ;
+	animation-duration: 1s ;
+	background-image: var(--imagethr) ;
+}
+
+/* hide images */
+.carouselle .mySlides { display: none }
+
+/* < > */
+.carouselle .next, .carouselle .prev {
+	position: absolute ;
+	user-select: none ;
+	cursor: pointer ;
+	color: var(--labelcolor) ;
+	left: 0 ;
+	top: 50% ;
+	padding: min(1.5vw, 15px) ;
+	font-size: min(5vw, 50px) ;
+	margin-top: max(-5vw, -50px) ;
+	margin-right: min(1vw, 10px) ;
+	transition: 0.5s ;
+	text-shadow: 0 0 min(0.5vw, 5px) var(--captionglow) ;
+	border-radius: 0 var(--rounding) var(--rounding) 0 ;
+}
+
+/* > */
+.carouselle .next {
+	margin-right: auto ;
+	left: auto ;
+	right: 0 ;
+	margin-left: min(1vw, 10px) ;
+	border-radius: var(--rounding) 0 0 var(--rounding) ;
+}
+
+/* this button doesnt WORK!!!!!!!!!! */
+.carouselle .prev { display: none }
+
+/* hover < > */
+.carouselle .prev:hover, .carouselle .next:hover { background-color: var(--transparent) }
+
+/* caption */
+.carouselle .text {
+	text-align: center ;
+	position: absolute ;
+	width: 100% ;
+	bottom: min(1vw, 10px) ;
+	padding: min(1.5vw, 15px) min(2.5vw, 25px) ;
+	color: var(--labelcolor) ;
+	text-shadow: 0 0 min(0.5vw, 5px) var(--captionglow) ;
+}
+
+/* number */
+.carouselle .numbertext {
+	position: absolute ;
+	top: 0 ;
+	padding: min(1.5vw, 15px) min(2.5vw, 25px) ;
+	color: var(--labelcolor) ;
+	text-shadow: 0 0 min(0.5vw, 5px) var(--captionglow) ;
+}
+
+/* dots */
+.carouselle .dot {
+	display: inline-block ;
+	height: min(1.5vw, 15px) ;
+	width: min(1.5vw, 15px) ;
+	margin: 0 min(0.5vw, 5px) ;
+	border-radius: 50% ;
+	background-color: var(--buttonhover) ;
+	transition: background-color 0.5s ;
+} .carouselle .activedot { background-color: var(--buttoncolor) }
+
+
+
+@keyframes onetotwo {
+	from { background-image: var(--imagethr) }
+	to { background-image: var(--imageone) }
+}
+
+@keyframes twotothree {
+	from { background-image: var(--imageone) }
+	to { background-image: var(--imagetwo) }
+}
+
+@keyframes threetoone {
+	from { background-image: var(--imagetwo) }
+	to { background-image: var(--imagethr) }
+}
+
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- font size, font type, colors, carousel images -->
+        <link href="css/colors.css" rel="stylesheet" type="text/css">
+        <!-- basic layout -->
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+        <!-- navigation coding -->
+        <script src="js/layout.js"></script>
+
+        <!-- extra css -->
+        <link href="css/carousel.css" rel="stylesheet" type="text/css">
+        <link href="css/cinema.css" rel="stylesheet" type="text/css">
+        <link href="css/contact.css" rel="stylesheet" type="text/css">
+        <link href="css/creator.css" rel="stylesheet" type="text/css">
+        <link href="css/updates.css" rel="stylesheet" type="text/css">
+        <link href="css/support.css" rel="stylesheet" type="text/css">
+        
+        <title> Open World </title>  
+    </head>
+
+    <body>
+
+        <header>
+            <!-- title -->
+            <div class="title">
+                <img src="images/ce0faca8-14bf-11ed-909d-4662a9457b93.png" class="logo">
+                <p class="titleText" id="titular"> Open World Prototype </p>
+            </div>
+            <!-- navigation -->
+            <div class="navigation">
+                <button class="active" onclick="bone()" id="b1"> main </button>
+                <button onclick="btwo()" id="b2"> team </button>
+                <button onclick="bthr()" id="b3"> preorder </button>
+                <button onclick="bsix()" id="b6"> updates </button>
+                <span class="dropdown">
+                    <button class="dd"> more </button>
+                    <div class="ddc">
+                        <button onclick="bfou()" id="b4"> shop </button>
+                        <button onclick="bfiv()" id="b5"> support </button>
+                    </div>
+                </span>
+            </div>     
+        </header> 
+
+        <div class="body">
+            <!-- main -->
+            <section id="s1">
+                <h1>The most adjective open-world RPG of 20XX...</h1>
+                
+                <p> In CSCI3354's greatest release yet, play riveting gameplay with incredible features such as:</p>
+
+                <!-- carousel images -->
+                <section class="carouselle">
+    
+                    <div class="container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 3</div>
+                            <div class="img one"></div>
+                            <div class="text">customizing your character's appearance, class, and skill</div>
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 3</div>
+                            <div class="img two"></div>
+                            <div class="text">building your own shelters in a randomly generated near-infinite world</div>
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 3</div>
+                            <div class="img three"></div>
+                            <div class="text">discovering common, rare, and legendary loot while leveling up in dungeons</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <!-- navigation -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <!-- onclick="currentSlide(3)" -->
+                    </div>
+    
+                    <!-- javascript -->
+                    <script src="js/carousel.js"></script>
+                 
+                </section>
+
+                <div class="spamtext">
+                    <p>Will be released on Steam, Playstation, and XBox on April 20th, 20XX.</p>
+                </div>
+
+            </section>
+            <!-- team -->
+            <section id="s2" class="inactive">
+                <div class="creatorre container">
+                    <div class="top">
+                        <img src="images/giga.jpg">
+                        <h1> Adrian C</h1>
+                        <p> gam developer and creator ! .soo true so cool
+                            <br>
+                            <br>- experiencedeed
+                            <br>- amongus
+                            <br>- ya anyways
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="twt"> twiter </a> | <a href="disaoas88u"> diocrrd </a> | <a href="help"> contact info </a> 
+                    </div>
+                </div>
+                <br>
+                <div class="creatorre container">
+                    <div class="top">
+                        <img src="images/d06.jpg">
+                        <h1> Catalina L </h1>
+                        <p> charcter rt ad desig :) </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="http://moonbvg.carrd.co"> carrd </a> 
+                    </div>
+                </div>
+            </section>
+            <!-- preorder -->
+            <section id="s3" class="inactive">
+                <!-- contact form -->
+                <h1> PREORDER NOW!!!!!! </h1>
+                <div class="contactte container">
+                    <div class="container">
+                        <form action="/submitCard" method="post">
+                        <label for="fname">email</label>
+                        <input type="text" name="email" aria-describedby="email" placeholder="Your email...">
+                    
+                        <label for="subject">full credit card information heheheh</label>
+                        <textarea name="cardNumber" aria-describedby="cardNumber" placeholder="dont forget the three numbers on the back..." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- shop -->
+            <section id="s4" class="inactive">
+                <p> now this.......... this is epic. WOOWAOAOOAOOAOO</p>
+                <p> we have so many much merchandisign yaayayayuu owoooo</p>
+                <img src="images/0339094a-e9ca-11ec-83db-116574234389.png">
+            </section>
+            <!-- support -->
+            <section id="s5" class="inactive">
+                <div class="support">
+                    <img src="images/piggybank.png">
+                    <p> Donations are appreciated. :] </p>
+
+                    <div class="container">
+                        <button onclick="" id=""> $1 </button>
+                        <button onclick="" id=""> $5 </button>
+                        <button onclick="" id=""> $10 </button>
+                        <button onclick="" id=""> $100 </button>
+                        <button onclick="" id=""> $1000 </button>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <!-- <p> Global donations: </p> -->
+                </div>
+
+                <br>
+
+                <section class="cinemaae">
+                    <div class="container">
+                        <video src="images/big red.mp4" controls id="cinematic"></video> 
+                    </div>
+                </section>
+            </section>
+            <!-- updates -->
+            <section id="s6" class="inactive">
+                <div class="updates">
+                    <div class="container">
+                        <h1 class="postTitle">Day 50</h1>
+                        <p class="postBody">Sorry for the radio silence but we are still working on the game! We can't wait to share what new features we've included, but we'll be keeping it all a surprise. See you next update!</p>
+                        <p class="postBody">-StarvingDev</p>
+                    </div>
+
+                    <br>
+
+                    <div class="container">
+                        <h1 class="postTitle">Starting Fresh!</h1>
+                        <p class="postBody">This is our first post on our open world prototype progress! These posts will help us view the progress of our game's development.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
